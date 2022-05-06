@@ -1,6 +1,6 @@
 class HomeController < ApplicationController
   def index
   end
-  def create
+  def account
   end
 end
