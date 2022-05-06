@@ -48,6 +48,9 @@ gem "bootsnap", require: false
 # Implement Bootstrap design
 gem "bootstrap"
 
+#Sign Up/Sign In
+gem "clearance", "~> 1.15.1"
+
 # Use Active Storage variants [https://guides.rubyonrails.org/active_storage_overview.html#transforming-images]
 # gem "image_processing", "~> 1.2"
 
