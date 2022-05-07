@@ -1,13 +1,17 @@
+<br>
+<% if signed_in? %>
+   Signed in as: <%= current_user.email %>
+    <%= button_to 'Sign Out', sign_out_path, method: :delete %>
+    <% else %>
+    <button><%= link_to 'Sign In', sign_in_path %></button>
+    <% end %>
+    <br>
+    <br>
+    <p>To get to your account, click on the button above.</p>
 
-    <% if signed_in? %>
-    Signed in as: <%= current_user.email %>
-    <%= button_to 'Sign out', sign_out_path, method: :delete %>
-   <% else %>
-     <%= link_to 'Sign in', sign_in_path %>
-   <% end %>
- 
    <div id="flash">
      <% flash.each do |key, value| %>
-     <div class="flash <%= key %>"><%= value %></div>
-     <% end %>
+    <div class="flash <%= key %>"><%= value %></div>
+    <% end %>
    </div>
+

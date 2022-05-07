@@ -56,6 +56,14 @@ gem "clearance", "~> 1.15.1"
 
 group :development, :test do
   # See https://guides.rubyonrails.org/debugging_rails_applications.html#debugging-with-the-debug-gem
+  
+  # Testing
+  gem "minitest-rails"
+
+  # Create fake data
+  gem "factory_bot_rails"
+
+
   gem "debug", platforms: %i[ mri mingw x64_mingw ]
 end
 
@@ -75,4 +83,5 @@ group :test do
   gem "capybara"
   gem "selenium-webdriver"
   gem "webdrivers"
+  gem "rspec-rails"
 end

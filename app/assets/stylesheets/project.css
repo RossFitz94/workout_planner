@@ -7,11 +7,34 @@
 
 }
 
+nav{
+    font-size: 80%;
+}
+
+nav img{
+    max-height: 100px;
+    max-width: 100px;
+}
+
+
 body{
-    background-color: #000000;
+    text-align: center;
+    color: #000000;
+    background-image: url("workout_planner.png");
+    background-position: bottom-center;
+    background-repeat: no-repeat;
+    background-size: cover;
+}
+
+button{
+    border-radius: 50%;
+}
+
+link {
     color: #ffffff;
 }
 
-.nav-item{
-    float: left;
+p, h1, h2{
+    text-align: center;
+    background-color: #00000041;
 }
