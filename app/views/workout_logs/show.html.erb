@@ -1,0 +1,14 @@
+<p style="color: #004aad"><%= notice %></p>
+
+<h1 class="heading"> Workout Logs</h1>
+
+<%= render @workout_log %>
+
+<div class="log">
+  <%= link_to "Edit this workout log", edit_workout_log_path(@workout_log), class:"buttons" %> |
+  <%= link_to "Back to workout logs", workout_logs_path, class:"buttons" %>
+</div>
+  <div class="log">
+    <%= button_to "Delete this workout log", @workout_log, method: :delete, class:"buttons" %>
+  </div>
+

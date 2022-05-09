@@ -46,7 +46,7 @@ gem "bootsnap", require: false
 # gem "sassc-rails"
 
 # Implement Bootstrap design
-gem "bootstrap"
+gem 'bootstrap', '~> 5.1', '>= 5.1.3'
 
 #Sign Up/Sign In
 gem "clearance", "~> 1.15.1"

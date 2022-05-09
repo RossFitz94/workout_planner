@@ -1,13 +1,22 @@
-<br>
-<% if signed_in? %>
-   Signed in as: <%= current_user.email %>
-    <%= button_to 'Sign Out', sign_out_path, method: :delete %>
+<div class="heading-account">
+  <h1>Sign In/Sign Up<h1>
+  <br>
+</div>
+<div class="sign-in">
+  <% if signed_in? %>
+  <div class="form-box">
+   <p class="confirm">You have been signed in with: <%= current_user.email %>.</p>
+  </div>
+  <br>
+    <%= button_to 'Sign Out', sign_out_path, method: :delete, class:"buttons" %>
     <% else %>
     <button><%= link_to 'Sign In', sign_in_path %></button>
     <% end %>
     <br>
     <br>
-    <p>To get to your account, click on the button above.</p>
+    <p class="sign-in-container">To get to your account, click on the button above.<br><br>
+    To sign up, click on the "Sign In" button to redirect you to create an account.</p>
+</div>
 
    <div id="flash">
      <% flash.each do |key, value| %>

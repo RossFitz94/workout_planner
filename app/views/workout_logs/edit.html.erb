@@ -1,0 +1,13 @@
+<h1 class="heading">Edit Workout Log</h1>
+
+<%= render "form", workout_log: @workout_log %>
+
+<br>
+
+<div class="log">
+    <%= link_to "Back to workout logs", workout_logs_path, class:"buttons" %>
+  </div>
+  <div class="log">
+    <%= link_to "Show workout log", @workout_log, class:"buttons" %> 
+  </div>
+

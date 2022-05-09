@@ -1,0 +1,20 @@
+<div id="clearance" class="sign-up">
+  <h1 class="heading"><%= t(".title") %></h1>
+
+  <div class="container-account">
+    <div class="form-box">
+      <%= form_for @user do |form| %>
+      <%= render partial: '/users/form', object: form %>
+    <br>
+    <div class="submit-field">
+          <%= form.submit %>
+        </div>
+    </div>
+
+    <br>
+    <div class="other-links">
+      <%= link_to t(".sign_in"), sign_in_path, class:"buttons" %>
+    </div>
+  <% end %>
+</div>
+</div>
