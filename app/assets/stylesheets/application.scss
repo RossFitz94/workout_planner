@@ -9,8 +9,8 @@
 }
 
 nav img{
-    max-height: 100px;
-    max-width: 100px;
+    max-height: 110px;
+    max-width: 110px;
 }
 
 body{
@@ -20,6 +20,7 @@ body{
     background-position: bottom-center;
     background-repeat: no-repeat;
     background-size: cover;
+    min-height: 100vh;
 }
 
 a{
@@ -66,7 +67,7 @@ h1, h2{
 
 .sign-in-container{
     background-color: #36bfff74;
-    margin: 6% 60% 6% 2%;
+    margin: 6% 40% 6% 2%;
     padding: 5%;
     font-size: 25px;
 }
@@ -111,3 +112,42 @@ h1, h2{
 .container-account{
     padding-top: 10%;
 }
+
+@media screen and (max-width: 1400px) {
+    .form-box{
+        margin: 0% 20%;
+    }
+    body{
+        background-image: url("workout_planner.png");
+        background-position: center;
+        background-size: cover;
+    }
+}
+
+@media screen and (max-width: 786px) {
+    .form-box{
+        margin: 0% 10%;
+    }
+    
+}
+@media screen and (max-width: 500px) {
+    body{
+        background-image: url("workout_planner.png");
+        background-position: bottom-center;
+        background-size: cover;
+    }
+}
+
+
+
+@media screen and (max-width: 380px) {
+    .form-box{
+        margin: 0% 5%;
+    }
+
+    .heading-account h1{
+        font-size: 15px;
+    }
+}
+
+
