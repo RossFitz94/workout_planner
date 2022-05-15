@@ -260,8 +260,7 @@ GEM
     zeitwerk (2.5.4)
 
 PLATFORMS
-  arm64-darwin-21
-  bundle lock x86_64-linux
+x86_64-linux
 
 DEPENDENCIES
   bootsnap
