@@ -6,6 +6,7 @@ Rails.application.routes.draw do
   # root "articles#index"
   root 'home#index'
     get '/home/account'
+    get 'home/workout'
    
 # Function to set up all CRUD routes 
   resources :workouts

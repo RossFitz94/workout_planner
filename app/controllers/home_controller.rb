@@ -3,6 +3,6 @@ class HomeController < ApplicationController
   end
   def account
   end
-  def planner
+  def workout
   end
 end
