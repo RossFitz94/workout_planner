@@ -57,10 +57,10 @@ gem "clearance", "~> 1.15.1"
 group :development, :test do
   # See https://guides.rubyonrails.org/debugging_rails_applications.html#debugging-with-the-debug-gem
   
-  # Testing
+  # Testing ruby syntax
   gem "minitest-rails"
 
-  # Create fake data
+  # Create fake data for testing
   gem "factory_bot_rails"
 
 
@@ -85,3 +85,6 @@ group :test do
   gem "webdrivers"
   gem "rspec-rails"
 end
+
+# Gems implemented in application:
+# Bootstrap, RSpec, mini-test, factory_bot, clearance 
